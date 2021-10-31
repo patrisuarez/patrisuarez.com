@@ -1,124 +1,188 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <title>patrisuarez.com | Desarrollo Web</title>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <meta http-equiv="Expires" content="0">
+<meta http-equiv="Last-Modified" content="0">
+<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+<meta http-equiv="Pragma" content="no-cache">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name=”robots” content=”index, follow”>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name=»description» content=»Desarrollo y diseño de páginas web, Fotografía y SEO en Tenerife.»>
-    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <header>
+    <header id="index">
         <div id="header-1">
             <nav id="nav-content">
                     <input type="checkbox" id="ckbox" />
+                    
                     <label for="ckbox" class="selector">
                         <i class="fa fa-bars fa-2x" id="toggle" aria-hidden="true"></i>
                     </label>
                 
                 <ul class="menu-box">
-                    <li class="nav-options" name="nuevo" onclick="cargaFormulario('')"><img id="icon-nav" src="./images/home.png" alt="Icono Inicio"></i>
-                        <p class="textonav">INICIO</p>
+                    <li class="nav-options" >
+                        <a href="#index" ><img id="icon-nav" src="./images/home.png" alt="Icono Inicio"><input type="checkbox" id="ckbox" /></a>
+                        <label for="ckbox"  id="close">
+                            <i class="far fa-window-close fa-x5"  id="toggle" aria-hidden="true"></i>
+                        </label></i>
+                        <a href="#index" class="textonav" style="color:#b59bc2;">INICIO</a>
                     </li>
-                    <li class="nav-options" name="nuevo" onclick="cargaFormulario('')"><img id="icon-nav" src="./images/quien.png" alt="Icono Quien Soy"></i>
-                        <p class="textonav">QUIÉN SOY</p>
+                    <li class="nav-options"></i>
+                        <a href="#quiensoy"><img id="icon-nav" src="./images/quien.png" alt="Icono Quien Soy"></a>
+                        <a href="#quiensoy" class="textonav"style="color:#b59bc2;">QUIÉN SOY</a>
                     </li>
-                    <li class="nav-options" name="nuevo" onclick="cargaFormulario('')"><img id="icon-nav" src="./images/portfolio.png" alt="Icono Portfolio"></i>
-                        <p class="textonav">PORTFOLIO</p>
+                    <li class="nav-options">
+                        <a href="#portfolio"><img id="icon-nav" src="./images/portfolio.png" alt="Icono Portfolio"></a>
+                        <a href="#portfolio" class="textonav"style="color:#b59bc2;">PORTFOLIO</a>
                     </li>
-                    <li class="nav-options" name="nuevo" onclick="cargaFormulario('')"><img id="icon-nav" src="./images/contact.png" alt="Icono Contacto"></i>
-                        <p class="textonav">CONTACTO</p>
+                    <li class="nav-options">
+                        <a href="#contacto"><img id="icon-nav" src="./images/contact.png" alt="Icono Contacto"></a>
+                        <a href="#contacto" class="textonav"style="color:#b59bc2;">CONTACTO</a>
+                    </li>
+                    <li class="nav-options">
+                        <a href="photography.html"><img id="icon-nav" src="./images/camara.png" alt="Icono Fotografía"></a>
+                        <a href="photography.html" class="textonav"style="color:#b59bc2;">FOTOGRAFÍA</a>
                     </li>
                 </ul>
             </nav>
         </div>
         <div id="header-2">
-            <img class="img-type" src="./images/imagencabecera.png" alt="Imagen de cabecera de patrisuarez.com">
+            <img class="img-type" src="./images/logoweb.png" alt="Imagen de cabecera de patrisuarez.com">
             <hgroup id="titulos">
-                <h1 id="titulogrande">HOLA!</h1>
+                <h1 id="titulogrande">HEY!</h1>
                 <h2 id="titulopeq">Soy Patri Suárez</h2>
                 <br>
                 <h2 id="soy">Desarrolladora web y Fotógrafa</h6>
             </hgroup>
         </div>
         <div class="social-content">
-            <a href=""><img class="social" src="./images/linkedin.png" alt="Logo Linkedin"></a>
-            <a href=""><img class="social" src="./images/instagram.png" alt="Logo Instagram"></a>
+            <a href="https://www.linkedin.com/in/patricia-suarez-dev/" target="_blank" rel="noopener noreferrer"><img class="social" src="./images/linkedin.png" alt="Logo Linkedin"></a>
+            <a href="https://github.com/patrisuarez" target="_blank" rel="noopener noreferrer"><img class="social" src="./images/githublogo.png" alt="Logo Github"></a>
         </div>
+        <label class="icon-up">
+            <a href="#index" style="color:#b59bc2;"><img id="icon-up" src="./images/up-icon.png" alt="Icono Subir"></a>
+        </label>
     </header>
     <main>
         <article id="article-1">
+            <p id="quiensoy"></p>
+            <h2 class="titles">Quién soy</h2>
+
             <div class="box-body">
+
                 <div class="box-1">
-                    Natural de la isla de Tenerife, siempre he tenido un gran interés por el arte, la tecnología y la fotografía. En un intento de aunar esas grandes pasiones, el diseño web se presentó en mi vida como una necesidad personal y es por eso que desde finales de 2019 comencé a formarme en desarrollo web, contando actualmente con más de 1000 horas de formación en este sector, otras tantas en sistemas microinformáticos y varios años de experiencia como fotógrafa de eventos deportivos.
+                    <p class="paragraph"> Natural de la isla de Tenerife, siempre he tenido un gran interés por el arte, la tecnología y la fotografía. En un intento de aunar esas grandes pasiones, el diseño web se presentó en mi vida como una necesidad personal y es por eso que desde finales de 2019 comencé a formarme en desarrollo web, contando actualmente con más de 1000 horas de formación en este sector, otras tantas en sistemas microinformáticos y varios años de experiencia como fotógrafa de eventos deportivos.</p>
                 </div>
-                <div class="box-1">
-                    <img class="img-type"src="./images/avatarpeqderecho.jpg" alt="">
+                <div id="avatar-box">
+                    <img class="avatar"src="./images/avatar.png" alt="Foto Patri Suárez">
                 </div>
             </div>
-<div class="box-body">
-    <div class="box-1">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit sit accusantium sed perferendis quod nihil perspiciatis odio obcaecati officia et, iure minima id nostrum nisi voluptatibus quidem qui quae tenetur.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dignissimos blanditiis obcaecati id, eligendi, dolor ea minima harum commodi magni ad, et tempore corrupti ducimus iusto mollitia pariatur cumque porro.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus corporis, quod repellendus iusto rem dolores ipsam, expedita ut sit quidem pariatur amet. Suscipit quos natus placeat architecto similique autem rerum.
-    </div>
-    <div class="box-1">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis magni, modi soluta voluptatum ut ea esse iste exercitationem vel impedit! Qui enim sapiente veniam eos corrupti asperiores accusantium atque et!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, temporibus. Eos expedita aliquam necessitatibus facilis veniam tempora rerum harum, placeat, adipisci magnam sunt asperiores pariatur. Assumenda ex rerum facere. Maxime!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit sit accusantium sed perferendis quod nihil perspiciatis odio obcaecati officia et, iure minima id nostrum nisi voluptatibus quidem qui quae tenetur.
-    </div>
-</div>
-            
-           
-           
+            <h2 class="titles">Habilidades y experiencia</h2>
+
+            <div class="box-body">
+                <div id="box-skills">
+                    <div class="skills-1">
+                        <img class="skills" src="./images/pslogo.jpg" alt="Icono Photoshop">
+                        <img class="skills" src="./images/lrlogo.jpg" alt="Icono Lightroom">
+                        <img class="skills" src="./images/ailogo.jpg" alt="Icono Adobe Illustrator">
+                        <img class="skills" src="./images/vsclogo.jpg" alt="Icono Visual Studio Code">
+
+                    </div>
+                    <div class="skills-2">
+                        <img class="skills" src="./images/elementorlogo.jpg" alt="Icono Elementor">
+                        <img class="skills" src="./images/wordpresslogo.jpg" alt="Icono Wordpress">
+                        <img class="skills" src="./images/htmllogo.jpg" alt="Icono HTML5">
+                        <img class="skills" src="./images/csslogo.jpg" alt="Icono CSS3">
+                    </div>
+                </div>
+                <div class="box-2">
+                    <p>Estoy en busca de mi primera experiencia en el sector tech. Mi trayectoria profesional se ha desarrollado en trabajos muy diversos como dependienta en una tienda de comestibles, paracaidista en el Ejercito Español, soldadora en unos astilleros o fotógrafa deportiva.</p>
+                </div>
+            </div>
         </article>
-
 <article id="article-2">
-<div class="box-body">
-    <div class="box-2">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit sit accusantium sed perferendis quod nihil perspiciatis odio obcaecati officia et, iure minima id nostrum nisi voluptatibus quidem qui quae tenetur.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dignissimos blanditiis obcaecati id, eligendi, dolor ea minima harum commodi magni ad, et tempore corrupti ducimus iusto mollitia pariatur cumque porro.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus corporis, quod repellendus iusto rem dolores ipsam, expedita ut sit quidem pariatur amet. Suscipit quos natus placeat architecto similique autem rerum.
-    </div>
-    <div class="box-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis magni, modi soluta voluptatum ut ea esse iste exercitationem vel impedit! Qui enim sapiente veniam eos corrupti asperiores accusantium atque et!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, temporibus. Eos expedita aliquam necessitatibus facilis veniam tempora rerum harum, placeat, adipisci magnam sunt asperiores pariatur. Assumenda ex rerum facere. Maxime!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit sit accusantium sed perferendis quod nihil perspiciatis odio obcaecati officia et, iure minima id nostrum nisi voluptatibus quidem qui quae tenetur.
-    </div>
-</div>
-<div class="box-body">
-    <div class="box-2">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit sit accusantium sed perferendis quod nihil perspiciatis odio obcaecati officia et, iure minima id nostrum nisi voluptatibus quidem qui quae tenetur.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dignissimos blanditiis obcaecati id, eligendi, dolor ea minima harum commodi magni ad, et tempore corrupti ducimus iusto mollitia pariatur cumque porro.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus corporis, quod repellendus iusto rem dolores ipsam, expedita ut sit quidem pariatur amet. Suscipit quos natus placeat architecto similique autem rerum.
-    </div>
-    <div class="box-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis magni, modi soluta voluptatum ut ea esse iste exercitationem vel impedit! Qui enim sapiente veniam eos corrupti asperiores accusantium atque et!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, temporibus. Eos expedita aliquam necessitatibus facilis veniam tempora rerum harum, placeat, adipisci magnam sunt asperiores pariatur. Assumenda ex rerum facere. Maxime!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit sit accusantium sed perferendis quod nihil perspiciatis odio obcaecati officia et, iure minima id nostrum nisi voluptatibus quidem qui quae tenetur.
-    </div>
-</div>
+    <p id="portfolio"></p>
+    <h2 id="title-portfolio">Portfolio</h2>
 
+    <a href="http://www.patrisuarez.com" target="_blank" rel="noopener noreferrer"><h2 class="subtitles">patrisuarez.com <i class="fas fa-external-link-alt" alt="Icono enlace externo"></i></h2></a>
+    <hr width="70%" color="#89F9FB">
+
+
+    <div class="box-portfolio">
+
+    <div class="portfolio-2">
+        <div class="col-port">
+            <img class="logo-port"src="./images/logoweb.png" alt="Logo psicoprisiones.com">
+            <img class="img-port"src="./images/patrisuarezmovil.png" alt="Vista movil psicoprisiones.com">
+        </div>
+        
+        
+        <div class="col-port">
+            <img class="img-port"src="./images/patrisuareztablet.png" alt="Vista tablet psicoprisiones.com">
+        <img class="img-port"src="./images/patrisuarezweb.png" alt="Vista escritorio psicoprisiones.com">
+        </div>
+    </div>
+    </div>
+
+
+    <a href="http://www.correporlafoto.com" target="_blank" rel="noopener noreferrer"><h2 class="subtitles">correporlafoto.com <i class="fas fa-external-link-alt" alt="Icono enlace externo"></i></h2></a>
+<hr width="70%" color="#89F9FB">
+    <div class="box-portfolio">
+
+    <div class="portfolio-2">
+        <div class="col-port">
+            <img class="logo-port"src="./images/cplflogo.png" alt="Logo correporlafoto.com">
+            <img class="img-port"src="./images/cplfmovil.png" alt="Vista movil correporlafoto.com">
+        </div>
+        <div class="col-port">
+
+        <img class="img-port"src="./images/cpltablet.png" alt="Vista tablet correporlafoto.com">
+        <img class="img-port"src="./images/cplfweb.png" alt="Vista escritorio correporlafoto.com">
+        </div>
+    </div>
+    </div>
+    <a href="http://www.psicoprisiones.com" target="_blank" rel="noopener noreferrer"><h2 class="subtitles">psicoprisiones.com <i class="fas fa-external-link-alt" alt="Icono enlace externo"></i></h2></a>
+    <hr width="70%" color="#89F9FB">
+
+
+    <div class="box-portfolio">
+
+    <div class="portfolio-2">
+        <div class="col-port">
+            <img class="logo-port"src="./images/psicoprisioneslogo.png" alt="Logo psicoprisiones.com">
+            <img class="img-port"src="./images/psicoprimovil.png" alt="Vista movil psicoprisiones.com">
+        </div>
+        
+        
+        <div class="col-port">
+            <img class="img-port"src="./images/psicopritablet.png" alt="Vista tablet psicoprisiones.com">
+        <img class="img-port"src="./images/psicopriweb.png" alt="Vista escritorio psicoprisiones.com">
+        </div>
+    </div>
+    </div>
+</article>
     </main>
-    <footer>
+    <footer id="contacto">
         <div id="footer-body">
             <div id="footer-1">
                     <address id="contact">
-                        <h2 id="titles">Contacta conmigo</h2>
+                        <h2 class="titles">Contacta conmigo</h2>
                         <br>
                         <p id="email">patriciasuarezdiazpro@gmail.com</p>
                     </address>
                 <div class="social-content">
-                    <a href=""><img class="social" src="./images/linkedin.png" alt="Logo Linkedin"></a>
-                    <a href=""><img class="social" src="./images/instagram.png" alt="Logo Instagram"></a>
+                    <a href="https://www.linkedin.com/in/patricia-suarez-dev/" target="_blank" rel="noopener noreferrer"><img class="social" src="./images/linkedin.png" alt="Logo Linkedin"></a>
+                    <a href="https://github.com/patrisuarez" target="_blank" rel="noopener noreferrer"><img class="social" src="./images/githublogo.png" alt="Logo Github"></a>
                 </div>
             </div>
             <div id="footer-2">
